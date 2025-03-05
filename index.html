@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/5a0c9130f7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="khali2">Classic Calculator</div>
+    <!-- Display -->
+    <div class="calc-grid container-fluid">
+        <div class="output" id="result">
+            <div class="previous-numbers" id="prev"></div>
+            <div class="current-numbers" id="currNum"></div>
+        </div>
+        <!-- Display -->
+        <!-- Buttons -->
+        <button class="span-two" id="clear">AC</button>
+        <button id="del" class="del">DEL</button>
+        <button id="divide" class="opp">÷</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="multi" class="opp">x</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="plus" class="opp">+</button>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="sub" class="opp">-</button>
+        <button id="deci">.</button>
+        <button id="zero">0</button>
+        <button class="span-two" id="equal">=</button>
+    </div>
+    <!-- Buttons -->
+    <!-- History -->
+    <div class="khali"></div>
+    <div class="blank">
+        <h1>History:</h1>
+        <h1 id="his"></h1>
+        <button id="clear2">Clear</button>
+    </div>
+    <!-- History -->
+    <script src="index.js"></script>
+</body>
+</html>

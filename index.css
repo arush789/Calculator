@@ -1,0 +1,158 @@
+*, *::before, ::after {
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-size: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% ); */
+    background-color: black;
+}
+
+.calc-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+    border-radius: 50px;
+    grid-gap: 5px;
+}
+
+.calc-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid black;
+    outline: none;
+    background-color: dee2e6;
+    border-radius: 50px;
+}
+
+.calc-grid > button:hover {
+    background-color: #FBCAFF;;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(107, 107, 107, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 50px;
+    border: 3px black solid;
+}
+
+.output .previous-numbers {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 124px;
+    left: 520px;
+}
+
+.output .current-numbers {
+    color: white;
+    font-size: 2.5rem;
+}
+.current-numbers{
+    padding: 20px 40px;
+}
+.del{
+    background-color: #dee2e6 !important;
+}
+#equal{
+    background-color: #caf0f8;
+}
+.opp{
+    background-color: #48cae4 !important;
+}
+#clear{
+    background-color: #b5e48c;
+}
+.blank{
+    background-color: white;
+    height: fit-content;
+    padding: 50px;
+    width: 100%;
+    border-radius: 50px 50px 0px 0px ;
+}
+#clear2{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    outline: none;
+    background-color: dee2e6;
+    border-radius: 50px;
+}
+.khali2{
+    color: black;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    background-color: #48cae4;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.khali{
+    height: 50px;
+}
+@media (max-width: 600px) {
+    .calc-grid {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        min-height: 90vh;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+    }
+    #equal{
+        display: grid;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        padding: 10px;
+    }
+    .opp{
+        padding: 10px;
+    }
+    #result{
+        padding: 0px ;
+    }
+    .blank{
+        background-color: white;
+        height: fit-content;
+        padding: 40px;
+        width: 100%;
+        border-radius: 50px 50px 0px 0px ;
+    }
+    #his{
+        padding-bottom: 50px;
+    }
+    #clear2{
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        font-size: 1.5rem;
+        border: 2px solid black;
+        outline: none;
+        background-color: dee2e6;
+        border-radius: 50px;
+    }
+    .output .previous-numbers {
+        width: 0;
+        height: 0;
+    }
+}
+
